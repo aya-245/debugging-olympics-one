@@ -37,7 +37,7 @@ function checkAnswer() {
     messageDisplay.textContent = "Incorrect!";
   }
 
-  scoreDisplay.textcontent = score;
+  scoreDisplay.textContent = score;
   currentQuestion += 1;
   answerInput.value = "";
 
