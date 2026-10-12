@@ -16,9 +16,6 @@ const questions = [
 let currentQuestion = 0;
 let score = 0;
 
-function init(){
-    showQuestion()
-}
 
 function showQuestion() {
   questionDisplay.textContent = questions[currentQuestion].question;
@@ -33,7 +30,8 @@ function checkAnswer() {
   }
 
   if (answer = questions[currentQuestion].answer) {
-    score =+ 1;
+    score += 1;
+    
     messageDisplay.textContent = "Correct!";
   } else {
     messageDisplay.textContent = "Incorrect!";
@@ -65,5 +63,4 @@ function restartQuiz() {
 submitButton.addEventListener("click", checkAnswer);
 restartButton.addEventListener("click", restartQuiz);
 
-init()
 showQuestion();
