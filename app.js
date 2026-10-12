@@ -29,9 +29,9 @@ function checkAnswer() {
     return;
   }
 
-  if (answer = questions[currentQuestion].answer) {
+  if (answer === questions[currentQuestion].answer) {
     score += 1;
-    
+
     messageDisplay.textContent = "Correct!";
   } else {
     messageDisplay.textContent = "Incorrect!";
