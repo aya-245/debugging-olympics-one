@@ -1,5 +1,5 @@
 const questionDisplay = document.querySelector("#question");
-const answerInput = document.querySelector(".answer");
+const answerInput = document.querySelector("#answer");
 const scoreDisplay = document.querySelector("#score");
 const messageDisplay = document.querySelector("#message");
 const submitButton = document.querySelector("#submit");
