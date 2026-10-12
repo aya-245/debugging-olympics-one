@@ -34,7 +34,8 @@ function checkAnswer() {
 
     messageDisplay.textContent = "Correct!";
   } else {
-    messageDisplay.textContent = "Incorrect!";
+    messageDisplay.textContent = "Incorrect! The correct answer is " + questions[currentQuestion].answer;
+
   }
 
   scoreDisplay.textContent = score;
